@@ -35,6 +35,7 @@ class Game:
         self.player = Entity.Player(self,self.tilemap.player_pos,(self.assets['player'].get_width(),self.assets['player'].get_height()))
         self.tilemap.load("data/Maps/map1.json")
         self.next_level= False
+        self.player.pos = self.tilemap.player_pos
         self.level = 1;
         self.display.blit(image_load("background.png"),(-50,-30))
     
